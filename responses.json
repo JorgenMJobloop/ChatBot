@@ -1,7 +1,21 @@
 {
-    "responses":[
-        "Hello from JSON", 
-        "JSON says hello", 
-        "This is being read from a JSON file."
+    "Rules":[
+        {
+        "keywords":["hi", "hello", "hey", "hi there", "greetings"],
+        "response": "Hello! I am a simple chatbot."
+    },
+    {
+    "keywords":["learn","c#", "java", "js", "tutorials", "programming"],
+    "response":[
+        "Okay, what do you want to learn more about? C#, Java or maybe JavaScript?",
+        "For C#, you can check out this link: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/",
+        "For Java, you can check out this link: https://docs.oracle.com/en/java/",
+        "For JavaScript, you can check out this link: https://developer.mozilla.org/en-US/docs/Web/JavaScript"]
+    }
+    ],
+    "DefaultResponses":[
+       "Hello! How can I help you?","Interesting, please tell me more!","That sounds exciting.",
+        "I did not quite catch that, but I will try to keep up!", "Thank you for sharing this.",
+        "Would you like to learn more about C#?", "Alright, here is the C# documentation: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/"
     ]
 }

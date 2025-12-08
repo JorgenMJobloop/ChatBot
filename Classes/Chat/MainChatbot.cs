@@ -15,7 +15,7 @@ public class MainChatbot
 
         while (true)
         {
-            Console.Write(": ");
+            Console.Write("> ");
             // get user input
             var input = Console.ReadLine();
             // validate user input
@@ -25,7 +25,6 @@ public class MainChatbot
             }
             // handle user input, and output a response phrase
             string response = _responseProvider.GetResponse(input);
-            Console.WriteLine($"DEBUG: {response.Length}, {response}");
             Console.WriteLine($"Bot: {response}");
         }
     }

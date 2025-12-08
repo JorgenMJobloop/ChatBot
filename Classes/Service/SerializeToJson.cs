@@ -5,7 +5,6 @@ using System.Text.Json;
 public class SerializeToJson
 {
     private readonly Dictionary<string, string> _updateTextPhrases = new Dictionary<string, string>(
-
     )
     {
         {"Hello","There"},
