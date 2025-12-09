@@ -11,7 +11,8 @@ class Program
         // Console.Read();
 
         // create a new instance object of our service class
-        IResponseProvider provider = new JsonResponseProvider("responses.json");
+        var jsonProvider = new JsonResponseProvider("responses.json");
+        IResponseProvider provider = new DebuggableResponseProvider(jsonProvider);
         // create a new instance object of our chatbot class
         MainChatbot chatbot = new MainChatbot(provider);
         // Run the chatbot's main loop.

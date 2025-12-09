@@ -2,6 +2,7 @@ public class MainChatbot
 {
     // create a private readonly IReponseProvider field
     private readonly IResponseProvider _responseProvider;
+    private readonly DebuggableResponseProvider _debug = new DebuggableResponseProvider(null!);
 
     public MainChatbot(IResponseProvider responseProvider)
     {
