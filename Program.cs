@@ -9,13 +9,18 @@ class Program
         // Console.WriteLine("Writing changes to JSON document.");
         // serializeToJson.SaveToDocument("example.json");
         // Console.Read();
-
         // create a new instance object of our service class
-        var jsonProvider = new JsonResponseProvider("responses.json");
-        IResponseProvider provider = new DebuggableResponseProvider(jsonProvider);
+        IResponseProvider provider = new JsonResponseProvider("responses.json");
+        ISystemLogger logger = new SystemLogger("events.log");
         // create a new instance object of our chatbot class
-        MainChatbot chatbot = new MainChatbot(provider);
+        MainChatbot chatbot = new MainChatbot(provider, logger);
+
+        //List<MainChatbot> chatbotList = new();
+
         // Run the chatbot's main loop.
         chatbot.RunMainloop();
+
+        //chatbotList.Add(chatbot);
+        //Console.WriteLine(chatbotList.Count()); // check the count, if it is 0, it was not properly assigned, if it is 1, it works.
     }
 }

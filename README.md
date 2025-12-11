@@ -3,8 +3,8 @@
 ## 04.12.2025 - 11.12.2025
 
 ## TODO
-    * Create a simple Chatbot, that responds to certain phrases
-
+    * Create a simple Chatbot, that responds to certain phrases[x]
+    * Create a Terminal-UI(TUI) using Spectre.Console
 ## Currently implemented
     * Random phrases
     * JSON response ruleset
